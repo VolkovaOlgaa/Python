@@ -1,4 +1,4 @@
-Esddes, [02.06.2025 15:28]
+
 import logging
 import json
 import os
@@ -155,7 +155,7 @@ async def text_handler(update: Update, context: CallbackContext) -> None:
 
 
 def main() -> None:
-    application = Application.builder().token("7968751762:AAG1Sn2iBd89fXd43h5cLasoAIo5h7bg6nQ").build()
+    application = Application.builder().token("token").build()
 
     application.add_handler(CommandHandler("start", start))
     application.add_handler(CommandHandler("play", play))
